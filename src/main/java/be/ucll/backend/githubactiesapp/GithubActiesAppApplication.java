@@ -11,7 +11,7 @@ public class GithubActiesAppApplication {
 
     @GetMapping("/")
     public String get(){
-        return "Github Actions App"
+        return "Github Actions App";
     }
     public static void main(String[] args) {
         SpringApplication.run(GithubActiesAppApplication.class, args);
