@@ -18,7 +18,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the jar file from the build stage
-COPY --from=build /app/target/IT-Landscape.jar IT-Landscape.jar
+COPY --from=build /app/target/github-action.jar github-action.jar
 
 # Command to run the application
-ENTRYPOINT ["java", "-jar", "IT-Landscape.jar"]
+ENTRYPOINT ["java","-jar","/github-action.jar"]
