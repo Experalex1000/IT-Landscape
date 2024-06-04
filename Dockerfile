@@ -18,7 +18,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the jar file from the build stage
-COPY --from=build /app/target/IT-Landscape-1.0-SNAPSHOT.jar IT-Landscape.jar
+COPY --from=build /app/target/IT-Landscape.jar IT-Landscape.jar
 
 # Command to run the application
 ENTRYPOINT ["java", "-jar", "IT-Landscape.jar"]
